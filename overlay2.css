@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Great+Vibes&family=Handjet:wght@300&display=swap');
+
+
+
+*{
+    padding:0;
+    margin:0;
+}
+#over{
+  
+   text-align: center;
+   text-shadow: 3px;
+   
+   font-family: 'Handjet', cursive;
+   margin-top:3%;
+   
+   font-size:45px;
+}
+
+.sub{
+    border:2px solid black;
+   width: 300px;
+   height:200px;
+  position:relative;
+  margin:auto;
+  margin-top:10%;
+  z-index: 9;
+}
+.uuu{
+    position:absolute;
+    top:0px;
+    /* border:2px solid green; */
+   
+}
+img{
+    width:300px;
+    height:200px;
+    z-index: 9;
+}
+.uuu::after{
+    content:"";
+    /* border:1px solid red; */
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+   
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+.sub:hover .uuu::after{
+    opacity:1;
+    z-index: 0;
+    background-color:#423c3c6c;
+    z-index: 0;
+}
+.content{
+    z-index: 50;
+    position:absolute;
+    top:5rem;
+    left:-3px;
+    opacity: 0;
+    text-align: center;
+    font-weight: 8px;
+    font-size:17px;
+    color:rgb(12, 11, 11);
+    transition: all 0.5s ease-in-out;
+    list-style-type:none;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+.sub:hover .content{
+    opacity:1;
+    left:37%;
+}
+.content:hover{
+   background-color:rgba(81, 114, 128, 0.637);
+    border:1px solid rgba(84, 117, 136, 0.705);
+    border-radius: 20%;
+}
